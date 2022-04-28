@@ -6,3 +6,7 @@ app = Flask(__name__) #Built-in variable that can be called for any variable fil
 @app.route("/home")
 def home_page():
     return render_template('home.html')
+
+@app.route("/market")
+def market_page():
+    return render_template('market.html')
